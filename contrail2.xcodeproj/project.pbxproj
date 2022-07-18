@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		73AD62012885A35700F61C8A /* contrail2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD62002885A35700F61C8A /* contrail2App.swift */; };
-		73AD62032885A35700F61C8A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD62022885A35700F61C8A /* ContentView.swift */; };
 		73AD62052885A35800F61C8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73AD62042885A35800F61C8A /* Assets.xcassets */; };
 		73AD62082885A35800F61C8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73AD62072885A35800F61C8A /* Preview Assets.xcassets */; };
 		73AD62122885A35900F61C8A /* contrail2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD62112885A35900F61C8A /* contrail2Tests.swift */; };
 		73AD621C2885A35900F61C8A /* contrail2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD621B2885A35900F61C8A /* contrail2UITests.swift */; };
 		73AD621E2885A35900F61C8A /* contrail2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD621D2885A35900F61C8A /* contrail2UITestsLaunchTests.swift */; };
 		73AD62312885A4D900F61C8A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AD62302885A4D900F61C8A /* HealthKit.framework */; };
+		73AD62372885A56C00F61C8A /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD62362885A56C00F61C8A /* MainScreen.swift */; };
+		73AD62392885A58800F61C8A /* RideListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD62382885A58800F61C8A /* RideListView.swift */; };
+		73AD623B2885A5A300F61C8A /* RideRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD623A2885A5A300F61C8A /* RideRowView.swift */; };
+		73AD623D2885A5C600F61C8A /* RideStatisticsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD623C2885A5C600F61C8A /* RideStatisticsRowView.swift */; };
+		73AD623F2885A5E800F61C8A /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD623E2885A5E800F61C8A /* ViewModelProtocol.swift */; };
+		73AD62422885A61900F61C8A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD62412885A61900F61C8A /* MainViewModel.swift */; };
+		73AD62442885A63500F61C8A /* RideListTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD62432885A63500F61C8A /* RideListTranslator.swift */; };
+		73AD62472885A66400F61C8A /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD62462885A66400F61C8A /* ColorExtension.swift */; };
+		73AD624A2885A69100F61C8A /* HealthKitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD62492885A69100F61C8A /* HealthKitClient.swift */; };
+		73AD624C2885A6A900F61C8A /* WorkoutsCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD624B2885A6A900F61C8A /* WorkoutsCacher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +46,6 @@
 /* Begin PBXFileReference section */
 		73AD61FD2885A35700F61C8A /* contrail2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contrail2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AD62002885A35700F61C8A /* contrail2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contrail2App.swift; sourceTree = "<group>"; };
-		73AD62022885A35700F61C8A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		73AD62042885A35800F61C8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73AD62072885A35800F61C8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73AD620D2885A35900F61C8A /* contrail2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = contrail2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +54,17 @@
 		73AD621B2885A35900F61C8A /* contrail2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contrail2UITests.swift; sourceTree = "<group>"; };
 		73AD621D2885A35900F61C8A /* contrail2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contrail2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		73AD62302885A4D900F61C8A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		73AD62362885A56C00F61C8A /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		73AD62382885A58800F61C8A /* RideListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideListView.swift; sourceTree = "<group>"; };
+		73AD623A2885A5A300F61C8A /* RideRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRowView.swift; sourceTree = "<group>"; };
+		73AD623C2885A5C600F61C8A /* RideStatisticsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideStatisticsRowView.swift; sourceTree = "<group>"; };
+		73AD623E2885A5E800F61C8A /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		73AD62412885A61900F61C8A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		73AD62432885A63500F61C8A /* RideListTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideListTranslator.swift; sourceTree = "<group>"; };
+		73AD62462885A66400F61C8A /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		73AD62492885A69100F61C8A /* HealthKitClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitClient.swift; sourceTree = "<group>"; };
+		73AD624B2885A6A900F61C8A /* WorkoutsCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsCacher.swift; sourceTree = "<group>"; };
+		73AD624F2885A8E200F61C8A /* contrail2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = contrail2.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +117,9 @@
 		73AD61FF2885A35700F61C8A /* contrail2 */ = {
 			isa = PBXGroup;
 			children = (
+				73AD624F2885A8E200F61C8A /* contrail2.entitlements */,
+				73AD62322885A53B00F61C8A /* Sources */,
 				73AD62002885A35700F61C8A /* contrail2App.swift */,
-				73AD62022885A35700F61C8A /* ContentView.swift */,
 				73AD62042885A35800F61C8A /* Assets.xcassets */,
 				73AD62062885A35800F61C8A /* Preview Content */,
 			);
@@ -137,6 +157,63 @@
 				73AD62302885A4D900F61C8A /* HealthKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73AD62322885A53B00F61C8A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				73AD62482885A68300F61C8A /* Model */,
+				73AD62452885A65500F61C8A /* Extension */,
+				73AD62402885A5FC00F61C8A /* ViewModel */,
+				73AD62332885A54600F61C8A /* View */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		73AD62332885A54600F61C8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				73AD62342885A54C00F61C8A /* Main */,
+				73AD623E2885A5E800F61C8A /* ViewModelProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73AD62342885A54C00F61C8A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				73AD62362885A56C00F61C8A /* MainScreen.swift */,
+				73AD62382885A58800F61C8A /* RideListView.swift */,
+				73AD623A2885A5A300F61C8A /* RideRowView.swift */,
+				73AD623C2885A5C600F61C8A /* RideStatisticsRowView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		73AD62402885A5FC00F61C8A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				73AD62412885A61900F61C8A /* MainViewModel.swift */,
+				73AD62432885A63500F61C8A /* RideListTranslator.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		73AD62452885A65500F61C8A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				73AD62462885A66400F61C8A /* ColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		73AD62482885A68300F61C8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				73AD62492885A69100F61C8A /* HealthKitClient.swift */,
+				73AD624B2885A6A900F61C8A /* WorkoutsCacher.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,8 +346,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73AD62032885A35700F61C8A /* ContentView.swift in Sources */,
+				73AD623D2885A5C600F61C8A /* RideStatisticsRowView.swift in Sources */,
+				73AD623B2885A5A300F61C8A /* RideRowView.swift in Sources */,
+				73AD62392885A58800F61C8A /* RideListView.swift in Sources */,
+				73AD624C2885A6A900F61C8A /* WorkoutsCacher.swift in Sources */,
+				73AD62372885A56C00F61C8A /* MainScreen.swift in Sources */,
+				73AD62442885A63500F61C8A /* RideListTranslator.swift in Sources */,
+				73AD623F2885A5E800F61C8A /* ViewModelProtocol.swift in Sources */,
 				73AD62012885A35700F61C8A /* contrail2App.swift in Sources */,
+				73AD62422885A61900F61C8A /* MainViewModel.swift in Sources */,
+				73AD624A2885A69100F61C8A /* HealthKitClient.swift in Sources */,
+				73AD62472885A66400F61C8A /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,12 +512,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = contrail2/contrail2.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"contrail2/Preview Content\"";
-				DEVELOPMENT_TEAM = 2YRXH6ZZZY;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2YRXH6ZZZY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Get a bike & running workout.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -444,6 +534,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.tokizuoh.contrail2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = contrail2Provisioning;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,12 +547,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = contrail2/contrail2.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"contrail2/Preview Content\"";
-				DEVELOPMENT_TEAM = 2YRXH6ZZZY;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2YRXH6ZZZY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Get a bike & running workout.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -473,6 +569,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.tokizuoh.contrail2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = contrail2Provisioning;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

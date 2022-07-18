@@ -11,7 +11,8 @@ import SwiftUI
 struct contrail2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainScreen()
+                .preferredColorScheme(.dark)
         }
     }
 }
