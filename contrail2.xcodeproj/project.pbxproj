@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7379B4B82885AD6B00F51453 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 7379B4B72885AD6B00F51453 /* schema.json */; };
+		7379B4BC2885ADDA00F51453 /* query.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 7379B4BB2885ADDA00F51453 /* query.graphql */; };
 		73AD62012885A35700F61C8A /* contrail2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD62002885A35700F61C8A /* contrail2App.swift */; };
 		73AD62052885A35800F61C8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73AD62042885A35800F61C8A /* Assets.xcassets */; };
 		73AD62082885A35800F61C8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73AD62072885A35800F61C8A /* Preview Assets.xcassets */; };
@@ -24,6 +26,7 @@
 		73AD62472885A66400F61C8A /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD62462885A66400F61C8A /* ColorExtension.swift */; };
 		73AD624A2885A69100F61C8A /* HealthKitClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD62492885A69100F61C8A /* HealthKitClient.swift */; };
 		73AD624C2885A6A900F61C8A /* WorkoutsCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD624B2885A6A900F61C8A /* WorkoutsCacher.swift */; };
+		73AD62522885ABB300F61C8A /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 73AD62512885ABB300F61C8A /* Apollo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7379B4B72885AD6B00F51453 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		7379B4BB2885ADDA00F51453 /* query.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = query.graphql; sourceTree = "<group>"; };
 		73AD61FD2885A35700F61C8A /* contrail2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contrail2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AD62002885A35700F61C8A /* contrail2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contrail2App.swift; sourceTree = "<group>"; };
 		73AD62042885A35800F61C8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +78,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73AD62312885A4D900F61C8A /* HealthKit.framework in Frameworks */,
+				73AD62522885ABB300F61C8A /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7379B4BA2885ADC800F51453 /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				7379B4BB2885ADDA00F51453 /* query.graphql */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
 		73AD61F42885A35700F61C8A = {
 			isa = PBXGroup;
 			children = (
@@ -117,7 +131,9 @@
 		73AD61FF2885A35700F61C8A /* contrail2 */ = {
 			isa = PBXGroup;
 			children = (
+				7379B4BA2885ADC800F51453 /* GraphQL */,
 				73AD624F2885A8E200F61C8A /* contrail2.entitlements */,
+				7379B4B72885AD6B00F51453 /* schema.json */,
 				73AD62322885A53B00F61C8A /* Sources */,
 				73AD62002885A35700F61C8A /* contrail2App.swift */,
 				73AD62042885A35800F61C8A /* Assets.xcassets */,
@@ -223,6 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73AD62212885A35900F61C8A /* Build configuration list for PBXNativeTarget "contrail2" */;
 			buildPhases = (
+				73AD62552885AC1700F61C8A /* Generate Apollo GraphQL API */,
 				73AD61F92885A35700F61C8A /* Sources */,
 				73AD61FA2885A35700F61C8A /* Frameworks */,
 				73AD61FB2885A35700F61C8A /* Resources */,
@@ -232,6 +249,9 @@
 			dependencies = (
 			);
 			name = contrail2;
+			packageProductDependencies = (
+				73AD62512885ABB300F61C8A /* Apollo */,
+			);
 			productName = contrail2;
 			productReference = 73AD61FD2885A35700F61C8A /* contrail2.app */;
 			productType = "com.apple.product-type.application";
@@ -304,6 +324,9 @@
 				Base,
 			);
 			mainGroup = 73AD61F42885A35700F61C8A;
+			packageReferences = (
+				73AD62502885ABB300F61C8A /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 73AD61FE2885A35700F61C8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -320,7 +343,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7379B4BC2885ADDA00F51453 /* query.graphql in Resources */,
 				73AD62082885A35800F61C8A /* Preview Assets.xcassets in Resources */,
+				7379B4B82885AD6B00F51453 /* schema.json in Resources */,
 				73AD62052885A35800F61C8A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +365,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73AD62552885AC1700F61C8A /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		73AD61F92885A35700F61C8A /* Sources */ = {
@@ -693,6 +739,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		73AD62502885ABB300F61C8A /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.52.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		73AD62512885ABB300F61C8A /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 73AD62502885ABB300F61C8A /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 73AD61F52885A35700F61C8A /* Project object */;
 }
